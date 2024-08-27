@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn-Based Game</title>
+    <style>
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(5, 50px);
+            grid-template-rows: repeat(5, 50px);
+            gap: 1px;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+        #timer {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #turn-indicator {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Turn-Based Game</h1>
+    <div id="game-board"></div>
+    <div id="timer">Time Left: 30s</div>
+    <div id="turn-indicator">Player 1's Turn</div>
+    <div id="messages"></div>
+    <script src="app.js"></script>
+</body>
+</html>
